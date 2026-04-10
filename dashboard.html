@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard — RoxFit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+  <style>
+    /* Dashboard-only nav override */
+    .nav { background: rgba(253,248,245,.95); backdrop-filter: blur(16px); box-shadow: var(--shadow-s); }
+  </style>
+</head>
+<body>
+
+<!-- Nav injected by layout.js -->
+
+<div class="dash-wrap">
+
+  <!-- ── SIDEBAR ──────────────────────────────────────── -->
+
+  <aside class="dash-sidebar">
+    <div class="dash-user">
+      <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&q=80&fit=crop" class="dash-avatar" alt="User avatar">
+      <div class="dash-user-name">Loading…</div>
+      <div class="dash-user-email dash-user-email"></div>
+    </div>
+
+```
+<div class="dash-nav-item active" data-panel="panelOverview"><span class="icon">🏠</span> Overview</div>
+<div class="dash-nav-item" data-panel="panelPrograms"><span class="icon">📅</span> My Programs</div>
+<div class="dash-nav-item" data-panel="panelEbooks"><span class="icon">📚</span> My Ebooks</div>
+<div class="dash-nav-item" data-panel="panelProgress"><span class="icon">📊</span> Progress</div>
+<div class="dash-nav-item" data-panel="panelBadges"><span class="icon">🏆</span> Achievements</div>
+
+<div style="margin-top:auto;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)">
+  <a href="index.html" class="dash-nav-item" style="margin-bottom:6px"><span class="icon">🌐</span> Back to Site</a>
+  <div class="dash-nav-item dash-logout"><span class="icon">🚪</span> Log Out</div>
+</div>
+```
+
+  </aside>
+
+  <!-- ── MAIN ─────────────────────────────────────────── -->
+
+  <main class="dash-main">
+
+```
+<!-- OVERVIEW PANEL -->
+<div id="panelOverview" class="dash-panel">
+  <div class="dash-greeting" style="margin-bottom:28px">
+    <h2>Welcome back, <span class="greeting-name">Queen</span> 👋</h2>
+    <p>Here's your week at a glance.</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="dash-stats">
+    <div class="dash-stat-card">
+      <div class="dash-stat-icon">🔥</div>
+      <div class="dash-stat-num">7</div>
+      <div class="dash-stat-lbl">Day Streak</div>
+    </div>
+    <div class="dash-stat-card">
+      <div class="dash-stat-icon">💪</div>
+      <div class="dash-stat-num">14</div>
+      <div class="dash-stat-lbl">Workouts Done</div>
+    </div>
+    <div class="dash-stat-card">
+      <div class="dash-stat-icon">⏱</div>
+      <div class="dash-stat-num">8.5h</div>
+      <div class="dash-stat-lbl">Hours Trained</div>
+    </div>
+    <div class="dash-stat-card">
+      <div class="dash-stat-icon">🎯</div>
+      <div class="dash-stat-num">65%</div>
+      <div class="dash-stat-lbl">Program Progress</div>
+    </div>
+  </div>
+
+  <!-- Progress tracker -->
+  <div class="progress-card">
+    <div class="progress-header">
+      <div>
+        <div class="progress-title">🔥 Burn &amp; Sculpt</div>
+        <div style="font-size:.8rem;color:rgba(255,255,255,.45);margin-top:4px">Week 4 of 8 · 14 of 32 workouts done</div>
+      </div>
+      <div class="progress-pct">65%</div>
+    </div>
+    <div class="bar-track">
+      <div class="bar-fill" data-pct="65" style="width:0%"></div>
+    </div>
+    <div style="font-size:.75rem;color:rgba(255,255,255,.35);margin-top:8px">On track to finish in 4 weeks 🎉</div>
+
+    <div style="margin-top:24px">
+      <div style="font-size:.75rem;font-weight:700;color:rgba(255,255,255,.45);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px">This Week</div>
+      <div class="week-row">
+        <div class="week-day done">✓</div>
+        <div class="week-day done">✓</div>
+        <div class="week-day done">✓</div>
+        <div class="week-day today">T</div>
+        <div class="week-day upcoming">F</div>
+        <div class="week-day rest">S</div>
+        <div class="week-day rest">S</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick badges preview -->
+  <div style="background:#fff;border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow-s)">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+      <h3 style="font-size:1.1rem">Recent Achievements</h3>
+      <button class="btn btn-outline btn-sm" onclick="document.querySelector('[data-panel=panelBadges]').click()">View All</button>
+    </div>
+    <div class="badges-row">
+      <div class="badge-item"><div class="badge-circle earned">🔥</div><div class="badge-lbl">7-Day Streak</div></div>
+      <div class="badge-item"><div class="badge-circle earned">💪</div><div class="badge-lbl">First Workout</div></div>
+      <div class="badge-item"><div class="badge-circle earned">⚡</div><div class="badge-lbl">HIIT Finisher</div></div>
+      <div class="badge-item"><div class="badge-circle locked">🏅</div><div class="badge-lbl">30-Day Legend</div></div>
+      <div class="badge-item"><div class="badge-circle locked">👑</div><div class="badge-lbl">Program Queen</div></div>
+      <div class="badge-item"><div class="badge-circle locked">🌟</div><div class="badge-lbl">Community Star</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PROGRAMS PANEL -->
+<div id="panelPrograms" class="dash-panel" style="display:none">
+  <h2 style="margin-bottom:24px">My Programs</h2>
+  <div class="grid-2">
+    <div style="background:#fff;border-radius:var(--r-lg);padding:24px;box-shadow:var(--shadow-s);display:flex;gap:18px;align-items:flex-start">
+      <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=120&q=80&fit=crop" style="width:72px;height:72px;border-radius:var(--r);object-fit:cover;flex-shrink:0" alt="Burn and Sculpt">
+      <div style="flex:1">
+        <div style="font-weight:700;color:var(--bark);margin-bottom:4px">🔥 Burn &amp; Sculpt</div>
+        <div style="font-size:.78rem;color:var(--muted);margin-bottom:10px">8 Weeks · Beginner</div>
+        <div class="bar-track" style="background:var(--warm)">
+          <div class="bar-fill" data-pct="65" style="width:0%;background:var(--grad-rose)"></div>
+        </div>
+        <div style="font-size:.72rem;color:var(--muted);margin-top:5px">65% complete · Week 4 of 8</div>
+        <a href="program-detail.html" class="btn btn-outline btn-sm" style="margin-top:12px">Continue →</a>
+      </div>
+    </div>
+    <div style="background:var(--blush);border-radius:var(--r-lg);padding:24px;box-shadow:var(--shadow-s);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;border:2px dashed var(--rose)">
+      <div style="font-size:1.8rem">➕</div>
+      <div style="font-weight:600;color:var(--bark)">Add Another Program</div>
+      <a href="programs.html" class="btn btn-primary btn-sm">Browse Programs</a>
+    </div>
+  </div>
+</div>
+
+<!-- EBOOKS PANEL -->
+<div id="panelEbooks" class="dash-panel" style="display:none">
+  <h2 style="margin-bottom:24px">My Ebooks</h2>
+  <div class="grid-2">
+    <div style="background:#fff;border-radius:var(--r-lg);padding:20px;box-shadow:var(--shadow-s);display:flex;gap:16px;align-items:center">
+      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=100&q=80&fit=crop" style="width:60px;height:70px;border-radius:10px;object-fit:cover;flex-shrink:0" alt="Nutrition Guide">
+      <div style="flex:1">
+        <div style="font-weight:700;font-size:.9rem;color:var(--bark);margin-bottom:3px">Eat Beautiful</div>
+        <div style="font-size:.76rem;color:var(--muted)">94 pages · PDF</div>
+      </div>
+      <button class="btn btn-primary btn-sm">↓ Download</button>
+    </div>
+    <div style="background:var(--blush);border-radius:var(--r-lg);padding:20px;box-shadow:var(--shadow-s);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;border:2px dashed var(--rose)">
+      <div style="font-size:1.8rem">📚</div>
+      <div style="font-weight:600;color:var(--bark)">Explore More Ebooks</div>
+      <a href="ebooks.html" class="btn btn-primary btn-sm">View Store</a>
+    </div>
+  </div>
+</div>
+
+<!-- PROGRESS PANEL -->
+<div id="panelProgress" class="dash-panel" style="display:none">
+  <h2 style="margin-bottom:24px">Your Progress</h2>
+  <div style="background:#fff;border-radius:var(--r-lg);padding:32px;box-shadow:var(--shadow-s)">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+      <div>
+        <div style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:8px">Weight</div>
+        <div style="font-family:var(--font-h);font-size:2.2rem;font-weight:700;color:var(--bark)">-8.5 kg</div>
+        <div style="font-size:.78rem;color:var(--rose-deep);font-weight:600;margin-top:4px">↓ Great progress!</div>
+      </div>
+      <div>
+        <div style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:8px">Waist</div>
+        <div style="font-family:var(--font-h);font-size:2.2rem;font-weight:700;color:var(--bark)">-6 cm</div>
+        <div style="font-size:.78rem;color:var(--rose-deep);font-weight:600;margin-top:4px">↓ Incredible!</div>
+      </div>
+    </div>
+    <div style="margin-top:28px;padding-top:28px;border-top:1px solid var(--warm)">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80&fit=crop" style="width:100%;border-radius:var(--r-lg);height:200px;object-fit:cover" alt="Progress">
+      <p style="color:var(--muted);font-size:.85rem;margin-top:14px;text-align:center">Full progress charts and body measurements — coming soon!</p>
+    </div>
+  </div>
+</div>
+
+<!-- BADGES PANEL -->
+<div id="panelBadges" class="dash-panel" style="display:none">
+  <h2 style="margin-bottom:24px">Achievements 🏆</h2>
+  <div style="background:#fff;border-radius:var(--r-lg);padding:32px;box-shadow:var(--shadow-s)">
+    <p style="color:var(--muted);font-size:.88rem;margin-bottom:28px">Earn badges by completing workouts, hitting streaks, and engaging with the community.</p>
+    <div class="badges-row" style="gap:24px">
+      <div class="badge-item"><div class="badge-circle earned">🔥</div><div class="badge-lbl">7-Day Streak</div></div>
+      <div class="badge-item"><div class="badge-circle earned">💪</div><div class="badge-lbl">First Workout</div></div>
+      <div class="badge-item"><div class="badge-circle earned">⚡</div><div class="badge-lbl">HIIT Finisher</div></div>
+      <div class="badge-item"><div class="badge-circle locked">🏅</div><div class="badge-lbl">30-Day Legend</div></div>
+      <div class="badge-item"><div class="badge-circle locked">👑</div><div class="badge-lbl">Program Queen</div></div>
+      <div class="badge-item"><div class="badge-circle locked">🌟</div><div class="badge-lbl">Community Star</div></div>
+      <div class="badge-item"><div class="badge-circle locked">📚</div><div class="badge-lbl">Bookworm</div></div>
+      <div class="badge-item"><div class="badge-circle locked">🌙</div><div class="badge-lbl">Night Owl</div></div>
+      <div class="badge-item"><div class="badge-circle locked">☀️</div><div class="badge-lbl">Early Bird</div></div>
+    </div>
+  </div>
+</div>
+```
+
+  </main>
+</div>
+
+<script src="js/layout.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
