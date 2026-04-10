@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs — RoxFit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════════════ -->
+
+<section style="background:var(--grad-hero);padding:130px 6% 70px;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;width:400px;height:400px;background:#F2A7BB;border-radius:50%;filter:blur(90px);opacity:.3;top:-20%;right:-5%"></div>
+  <span class="eyebrow">All Programs</span>
+  <h1 style="margin-bottom:14px">Find Your <em style="color:var(--rose-deep)">Perfect</em> Program</h1>
+  <p style="color:var(--muted);max-width:460px;margin:0 auto;font-size:.98rem">Built around your goals, your body, and your lifestyle. Use the filters below to find your match.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     FILTER + GRID
+════════════════════════════════════════════════════ -->
+
+<section class="section">
+
+  <div class="filter-row">
+    <button class="filter-btn active" data-filter="all">All Programs</button>
+    <button class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+    <button class="filter-btn" data-filter="strength">Strength &amp; Tone</button>
+    <button class="filter-btn" data-filter="wellness">Wellness</button>
+    <button class="filter-btn" data-filter="home">Home Workouts</button>
+  </div>
+
+  <div class="grid-3">
+
+```
+<a href="program-detail.html" class="prog-card fade-up" data-category="weight-loss">
+  <div class="prog-card-img">
+    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&fit=crop" alt="Burn and Sculpt">
+    <span class="prog-badge">Most Popular</span>
+  </div>
+  <div class="prog-card-body">
+    <h3>🔥 Burn &amp; Sculpt</h3>
+    <p>Full-body fat burn with zero equipment. Perfect for busy women.</p>
+    <div class="prog-meta">
+      <span>📅 8 Weeks</span><span>📊 Beginner</span><span>🎯 Weight Loss</span>
+    </div>
+    <div class="prog-footer">
+      <div class="prog-price"><del>₦18,000</del> ₦12,500</div>
+      <span class="btn btn-primary btn-sm">View Plan</span>
+    </div>
+  </div>
+</a>
+
+<a href="program-detail.html" class="prog-card fade-up" data-category="strength" style="animation-delay:.06s">
+  <div class="prog-card-img">
+    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80&fit=crop" alt="Strong and Defined">
+    <span class="prog-badge">New</span>
+  </div>
+  <div class="prog-card-body">
+    <h3>💪 Strong &amp; Defined</h3>
+    <p>Build lean muscle and feel powerfully feminine. Resistance training focused.</p>
+    <div class="prog-meta">
+      <span>📅 10 Weeks</span><span>📊 Intermediate</span><span>🎯 Muscle Tone</span>
+    </div>
+    <div class="prog-footer">
+      <div class="prog-price"><del>₦22,000</del> ₦15,000</div>
+      <span class="btn btn-primary btn-sm">View Plan</span>
+    </div>
+  </div>
+</a>
+
+<a href="program-detail.html" class="prog-card fade-up" data-category="wellness" style="animation-delay:.12s">
+  <div class="prog-card-img">
+    <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80&fit=crop" alt="Flex and Flow">
+    <span class="prog-badge">Fan Favourite</span>
+  </div>
+  <div class="prog-card-body">
+    <h3>🧘 Flex &amp; Flow</h3>
+    <p>Yoga-inspired mobility, core strength, and daily stress relief.</p>
+    <div class="prog-meta">
+      <span>📅 6 Weeks</span><span>📊 All Levels</span><span>🎯 Flexibility</span>
+    </div>
+    <div class="prog-footer">
+      <div class="prog-price"><del>₦14,000</del> ₦9,500</div>
+      <span class="btn btn-primary btn-sm">View Plan</span>
+    </div>
+  </div>
+</a>
+
+<a href="program-detail.html" class="prog-card fade-up" data-category="home" style="animation-delay:.18s">
+  <div class="prog-card-img">
+    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80&fit=crop" alt="Home Warrior">
+    <span class="prog-badge">Bestseller</span>
+  </div>
+  <div class="prog-card-body">
+    <h3>🏠 Home Warrior</h3>
+    <p>Zero equipment. Zero excuses. Crush your goals from your living room.</p>
+    <div class="prog-meta">
+      <span>📅 8 Weeks</span><span>📊 Beginner</span><span>🎯 Home Workout</span>
+    </div>
+    <div class="prog-footer">
+      <div class="prog-price"><del>₦16,500</del> ₦11,000</div>
+      <span class="btn btn-primary btn-sm">View Plan</span>
+    </div>
+  </div>
+</a>
+
+<a href="program-detail.html" class="prog-card fade-up" data-category="weight-loss" style="animation-delay:.24s">
+  <div class="prog-card-img">
+    <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=600&q=80&fit=crop" alt="HIIT Queen">
+    <span class="prog-badge">Advanced</span>
+  </div>
+  <div class="prog-card-body">
+    <h3>⚡ HIIT Queen</h3>
+    <p>High-intensity intervals designed to torch calories and build endurance fast.</p>
+    <div class="prog-meta">
+      <span>📅 6 Weeks</span><span>📊 Advanced</span><span>🎯 Fat Burn</span>
+    </div>
+    <div class="prog-footer">
+      <div class="prog-price"><del>₦20,000</del> ₦13,500</div>
+      <span class="btn btn-primary btn-sm">View Plan</span>
+    </div>
+  </div>
+</a>
+
+<a href="program-detail.html" class="prog-card fade-up" data-category="wellness" style="animation-delay:.30s">
+  <div class="prog-card-img">
+    <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&q=80&fit=crop" alt="Post-Baby Restore">
+    <span class="prog-badge">Trending</span>
+  </div>
+  <div class="prog-card-body">
+    <h3>🌸 Post-Baby Restore</h3>
+    <p>Safe, gentle, effective recovery for new mums. Designed with expert care.</p>
+    <div class="prog-meta">
+      <span>📅 12 Weeks</span><span>📊 Gentle</span><span>🎯 Recovery</span>
+    </div>
+    <div class="prog-footer">
+      <div class="prog-price"><del>₦19,500</del> ₦14,000</div>
+      <span class="btn btn-primary btn-sm">View Plan</span>
+    </div>
+  </div>
+</a>
+```
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     BUNDLE CTA
+════════════════════════════════════════════════════ -->
+
+<section class="section-sm section-dark" style="text-align:center">
+  <div style="max-width:540px;margin:0 auto" class="fade-up">
+    <div style="font-size:2rem;margin-bottom:12px">🎁</div>
+    <h2 style="color:#fff;margin-bottom:10px">Not Sure? Try the Bundle</h2>
+    <p style="color:rgba(255,255,255,.6);margin-bottom:28px">Get access to ALL 6 programs + full ebook library + community. Save 40%.</p>
+    <button class="btn btn-primary btn-lg" onclick="openAuthModal('signup')">Get the Full Bundle — ₦39,999</button>
+  </div>
+</section>
+
+<script src="js/layout.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
