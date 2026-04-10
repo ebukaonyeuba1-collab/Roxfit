@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebooks — RoxFit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+</head>
+<body>
+
+<!-- PAGE HERO -->
+<section style="background:var(--grad-hero);padding:130px 6% 70px;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;width:350px;height:350px;background:#F9D4C2;border-radius:50%;filter:blur(80px);opacity:.35;top:-15%;left:-5%"></div>
+  <span class="eyebrow">Digital Library</span>
+  <h1 style="margin-bottom:14px">Knowledge is the <em style="color:var(--rose-deep)">First</em> Step</h1>
+  <p style="color:var(--muted);max-width:440px;margin:0 auto">Expertly written guides, meal plans, and mindset books. Instant PDF download — read anywhere.</p>
+</section>
+
+<!-- EBOOK GRID -->
+<section class="section">
+  <div class="grid-4">
+
+    <div class="ebook-card fade-up">
+      <div class="ebook-cover">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80&fit=crop" alt="Nutrition Guide">
+        <div class="ebook-cover-overlay"></div>
+      </div>
+      <div class="ebook-card-body">
+        <div class="ebook-tag">Nutrition</div>
+        <h3>Eat Beautiful: Nigerian Nutrition Guide</h3>
+        <p>Delicious, locally-sourced meal plans for a leaner, glowing you. 94 pages.</p>
+        <div class="ebook-footer">
+          <div class="ebook-price"><del>₦7,000</del> ₦4,500</div>
+          <button class="btn btn-primary btn-sm" onclick="openAuthModal('signup')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebook-card fade-up" style="animation-delay:.07s">
+      <div class="ebook-cover">
+        <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=500&q=80&fit=crop" alt="Sleep Guide">
+        <div class="ebook-cover-overlay"></div>
+      </div>
+      <div class="ebook-card-body">
+        <div class="ebook-tag">Wellness</div>
+        <h3>Sleep to Slim: Recovery Secrets</h3>
+        <p>How optimising sleep transforms your body composition. 68 pages.</p>
+        <div class="ebook-footer">
+          <div class="ebook-price"><del>₦5,500</del> ₦3,500</div>
+          <button class="btn btn-primary btn-sm" onclick="openAuthModal('signup')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebook-card fade-up" style="animation-delay:.14s">
+      <div class="ebook-cover">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80&fit=crop" alt="Mindset Book">
+        <div class="ebook-cover-overlay"></div>
+      </div>
+      <div class="ebook-card-body">
+        <div class="ebook-tag">Mindset</div>
+        <h3>Mind Over Body: The Fitness Mindset</h3>
+        <p>Build unshakeable discipline, confidence, and consistency. 110 pages.</p>
+        <div class="ebook-footer">
+          <div class="ebook-price"><del>₦8,000</del> ₦5,000</div>
+          <button class="btn btn-primary btn-sm" onclick="openAuthModal('signup')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebook-card fade-up" style="animation-delay:.21s">
+      <div class="ebook-cover">
+        <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=500&q=80&fit=crop" alt="Meal Prep">
+        <div class="ebook-cover-overlay"></div>
+      </div>
+      <div class="ebook-card-body">
+        <div class="ebook-tag">Nutrition</div>
+        <h3>Meal Prep Queen: 7-Day Plans</h3>
+        <p>Plan, prep, and eat your way to your goals in under 2 hours a week. 76 pages.</p>
+        <div class="ebook-footer">
+          <div class="ebook-price"><del>₦6,000</del> ₦3,800</div>
+          <button class="btn btn-primary btn-sm" onclick="openAuthModal('signup')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BUNDLE OFFER -->
+<section class="section-sm section-dark" style="padding:70px 6%">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:900px;margin:0 auto" class="fade-up">
+    <div>
+      <span class="eyebrow" style="display:block;margin-bottom:12px">Best Value</span>
+      <h2 style="color:#fff;margin-bottom:14px">The Complete RoxFit Bundle</h2>
+      <p style="color:rgba(255,255,255,.6);line-height:1.72;margin-bottom:0">All 4 ebooks + 3 months community access + bonus recipe pack. Everything you need to nail your nutrition and mindset — bundled at over 40% off.</p>
+    </div>
+    <div style="background:rgba(255,255,255,.06);border-radius:var(--r-xl);padding:36px;text-align:center;border:1px solid rgba(255,255,255,.1)">
+      <div style="font-size:2rem;margin-bottom:10px">📦</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:8px">
+        <div style="font-family:var(--font-h);font-size:2.2rem;font-weight:700;color:#fff">₦14,999</div>
+        <del style="color:rgba(255,255,255,.35);font-size:1rem">₦26,800</del>
+      </div>
+      <div style="font-size:.78rem;color:rgba(255,255,255,.4);margin-bottom:22px">Save ₦11,801 today</div>
+      <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center" onclick="openAuthModal('signup')">
+        Grab the Bundle ✨
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section-sm section-blush" style="text-align:center">
+  <div style="max-width:560px;margin:0 auto" class="fade-up">
+    <div style="font-size:1.4rem;color:#F9A825;margin-bottom:16px">★★★★★</div>
+    <p style="font-size:1.05rem;color:var(--bark-soft);line-height:1.75;font-family:var(--font-h);font-style:italic;margin-bottom:20px">"The Nigerian Nutrition Guide changed everything. I finally understood how to eat for my body and my culture at the same time."</p>
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px">
+      <img src="https://images.unsplash.com/photo-1611432579699-484f7990b127?w=60&q=80&fit=crop" style="width:44px;height:44px;border-radius:50%;object-fit:cover" alt="Amara">
+      <div style="text-align:left"><div style="font-weight:600;font-size:.9rem;color:var(--bark)">Amara T.</div><div style="font-size:.75rem;color:var(--muted)">Enugu, Nigeria</div></div>
+    </div>
+  </div>
+</section>
+
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

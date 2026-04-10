@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Roxy — RoxFit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+</head>
+<body>
+
+<!-- HERO BANNER -->
+<section style="background:var(--grad-hero);padding:130px 6% 70px;position:relative;overflow:hidden">
+  <div style="position:absolute;width:450px;height:450px;background:#F2A7BB;border-radius:50%;filter:blur(100px);opacity:.3;top:-20%;right:-5%"></div>
+  <div style="max-width:620px;position:relative;z-index:2">
+    <span class="eyebrow">Our Story</span>
+    <h1 style="margin-bottom:18px">Built by a Woman Who <em style="color:var(--rose-deep)">Gets It</em></h1>
+    <p style="font-size:1.05rem;max-width:500px">RoxFit exists because fitness should work for African women — not just women who look like they live in California.</p>
+  </div>
+</section>
+
+<!-- FOUNDER STORY -->
+<section class="section">
+  <div class="about-split fade-up">
+    <!-- Image -->
+    <div class="about-img-wrap">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=85&fit=crop" alt="Roxanne Obi — Founder of RoxFit">
+      <div class="about-img-badge">
+        <div class="big">50K+</div>
+        <small>Women Transformed</small>
+      </div>
+    </div>
+    <!-- Copy -->
+    <div>
+      <span class="eyebrow">Founder</span>
+      <h2 style="margin-bottom:20px">Hi, I'm Roxanne Obi 👋</h2>
+      <p style="margin-bottom:16px">Lagos-born, Lagos-raised, and obsessed with helping women look and feel their most powerful selves. I'm a certified personal trainer, nutritionist, and the proudest big sister you'll ever meet.</p>
+      <p style="margin-bottom:16px">I started RoxFit after years of following Western programs that didn't account for our bodies, our food, our climate, or our daily reality. Every program I tried was designed for someone else. I knew there had to be a better way.</p>
+      <p style="margin-bottom:28px">Today, RoxFit has helped over 50,000 women across Nigeria and West Africa transform not just their physiques — but their confidence, their energy, and their entire relationship with their bodies.</p>
+
+      <!-- Stats row -->
+      <div style="display:flex;gap:36px;flex-wrap:wrap;margin-bottom:36px">
+        <div>
+          <div class="stat-num">7+</div>
+          <div class="stat-lbl">Years Coaching</div>
+        </div>
+        <div>
+          <div class="stat-num">50K+</div>
+          <div class="stat-lbl">Women Reached</div>
+        </div>
+        <div>
+          <div class="stat-num">200+</div>
+          <div class="stat-lbl">Transformations</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="programs.html" class="btn btn-primary">Explore Programs 🚀</a>
+        <button class="btn btn-outline" onclick="openAuthModal('signup')">Join the Community</button>
+      </div>
+
+      <!-- Values -->
+      <div class="values-grid" style="margin-top:40px">
+        <div class="value-card">
+          <div class="vicon">🌍</div>
+          <h4>Built for African Women</h4>
+          <p>Programs designed with African body types, food, and lifestyle in mind.</p>
+        </div>
+        <div class="value-card">
+          <div class="vicon">💪</div>
+          <h4>Strength Over Shrinking</h4>
+          <p>We celebrate strong, powerful bodies — not just smaller ones.</p>
+        </div>
+        <div class="value-card">
+          <div class="vicon">🧠</div>
+          <h4>Mind First, Body Second</h4>
+          <p>Real transformation starts in the head. We invest equally in mindset.</p>
+        </div>
+        <div class="value-card">
+          <div class="vicon">💗</div>
+          <h4>Community Over Competition</h4>
+          <p>Every member is a sister, a cheerleader, and an inspiration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO COLLAGE -->
+<section class="section-sm section-alt">
+  <div class="section-header fade-up">
+    <span class="eyebrow">In the Studio</span>
+    <h2>Behind the Brand</h2>
+    <p>Real sweat. Real effort. Real love for this community.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px" class="fade-up">
+    <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=400&q=80&fit=crop" style="border-radius:var(--r-lg);aspect-ratio:3/4;object-fit:cover;width:100%" alt="Studio">
+    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&q=80&fit=crop" style="border-radius:var(--r-lg);aspect-ratio:3/4;object-fit:cover;width:100%;margin-top:32px" alt="Workout">
+    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80&fit=crop" style="border-radius:var(--r-lg);aspect-ratio:3/4;object-fit:cover;width:100%" alt="Training">
+    <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&q=80&fit=crop" style="border-radius:var(--r-lg);aspect-ratio:3/4;object-fit:cover;width:100%;margin-top:32px" alt="Yoga">
+  </div>
+</section>
+
+<!-- PRESS / FEATURES -->
+<section class="section-sm" style="text-align:center">
+  <div class="fade-up">
+    <span class="eyebrow" style="display:block;margin-bottom:28px">As Featured In</span>
+    <div style="display:flex;justify-content:center;align-items:center;gap:48px;flex-wrap:wrap">
+      <div style="font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:var(--warm)">TechCabal</div>
+      <div style="font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:var(--warm)">Pulse Nigeria</div>
+      <div style="font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:var(--warm)">YNaija</div>
+      <div style="font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:var(--warm)">Guardian Life</div>
+      <div style="font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:var(--warm)">Bella Naija</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm section-dark" style="text-align:center">
+  <div style="max-width:500px;margin:0 auto" class="fade-up">
+    <h2 style="color:#fff;margin-bottom:12px">Ready to Write Your Story?</h2>
+    <p style="color:rgba(255,255,255,.6);margin-bottom:28px">Thousands of women have transformed their lives with RoxFit. Yours begins the moment you decide.</p>
+    <a href="programs.html" class="btn btn-primary btn-lg">Start My Transformation →</a>
+  </div>
+</section>
+
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
